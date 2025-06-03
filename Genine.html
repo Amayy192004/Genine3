@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genine</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #8a098f 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            border: 6px solid #3498db;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            font-weight: normal;
+        }
+
+        .tagline {
+            font-size: 1.3em;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .left-column {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .about-text {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+        }
+
+        .skills-section {
+            background: #ecf0f1;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .skills-section h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9em;
+            transition: background 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: #2980b9;
+        }
+
+        .photo-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .photo-caption {
+            padding: 15px;
+            font-size: 0.95em;
+            color: #555;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
+
+        .contact-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 12px 25px;
+            margin: 8px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .contact-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="494856449_1005937977987051_5008739085485558059_n.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Genine</h1>
+            <p class="tagline">Step into the light of someone truly special. Genine isn't just beautiful — she's the kind of beautiful that turns moments into memories and smiles into sunshine. This page is a small reflection of her vibrant soul, kind heart, and the undeniable charm that makes her so unforgettable. Whether it's her laughter that lights up the room or her strength that inspires those around her, she is simply one of a kind.
+
+Explore, and see for yourself why she's not just my future girlfriend — she's my greatest blessing.</p>
+        </header>
+
+        <div class="main-content">
+            <div class="left-column">
+                <div class="about-text">
+                    <p>Unfortunately love is imperfect, so yeah i'll love you when you're mad, i'll love you when you're sad, 'll love you when you're happy, and i'll love you even more at your lowest.</p>
+                    
+                    <p>From the bottom of my heart, i wanted to say thankyou for being with me and accepting this side of me. You're the first one who i can show my childish silly attitude. I love you and i will always do.</p>
+                    
+                    <p>May we choose each other always, even in our moments of weakness, in the shifts of mood, the weight of our thoughts, the fragility we both carry. Let's be patient & let reassurance be the thread that keeps us close, no matter the distance.
+                        Just so you know. i will kiss all your insecurities, I will love your darkest self. That's how much i love you.
+                    </p>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Course</h3>
+                    <span class="skill-tag">Psychology</span>
+  
+                    
+   
+                   
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="photo-card">
+                    <img src="494817082_1800721547455234_1438653695816394703_n.jpg" alt="ME">
+                    <div class="photo-caption">🌸 General Symbolism of Carnation
+Love
+
+Admiration
+
+Fascination
+
+Devotion
+
+Red Carnation Deep love, admiration, and affection
+
+Pink Carnation A mother's undying love; gratitude and fondness
+
+White Carnation Pure love, innocence, and good luck
+
+Purple Carnation Capriciousness and unpredictability
+
+Yellow Carnation Rejection or disappointment
+
+</div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="494817050_3612350862393618_5826876617147537756_n.jpg" alt="">
+                    <div class="photo-caption">In every universe, i'll find you and i'll always choose you.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="494823213_2056962651732323_8229628853832370125_n.jpg" alt="Coffee ">
+                <div class="photo-caption">I ONLY WANT IT TO BE YOU.</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="494814753_1907815323384864_2202841034792111615_n.jpg" >
+                <div class="photo-caption">iloveyouu always Ms. Sungit</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="494856887_628267073599246_3925864384456232823_n.jpg" >
+                <div class="photo-caption">It's you. In a thousand lifetimes, It's always you.</div>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>I'm always excited to meet new people and explore creative opportunities.</p>
+            <a href="" class="contact-link">Email Me</a>
+            <a href="#" class="contact-link">LinkedIn</a>
+            <a href="#" class="contact-link">Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>
